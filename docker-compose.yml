@@ -1,0 +1,15 @@
+{
+    "name": "Full Stack Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+    "features": {
+        "docker-in-docker": "latest",
+        "node": "14"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "zixuanchen.vscode-motoko"
+    ],
+    "postCreateCommand": "npm install && npm install -g dfx-cli && dfx start --background"
+}
